@@ -296,3 +296,29 @@ MER +12.5% — but hindsight-selected; no mechanical screen captured them)
 - FMETF → ATR FAMI rename. https://www.bworldonline.com/corporate/2025/02/13/652951/fmetf-board-oks-name-change-to-atr-fami-philippine-equity-etf/
 - CEIC PSEi P/E & yield. https://www.ceicdata.com/en/philippines/philippine-stock-exchange-pe-ratio-pb-ratio-and-yield/pe-ratio-index-level-psei
 - Historical price data: https://github.com/carlo01092/pse (PSE EDGE archive, 1985–2021)
+
+---
+
+## 6. Follow-up tests (see `followup_tests.py`)
+
+**6.1 DCA vs lump sum on individual dividend stocks (5y rolling windows):** lump
+sum wins even more decisively than on the index — DCA won only 13–39% of windows
+(TEL 37%, MER 39%, MBT 28%, BDO 13%, SCC 18%), median end-wealth 70–89% of lump
+sum. Dividend stocks trend and pay you while you hold; drip-feeding into them
+forfeits both. DCA remains purely a salary-flow discipline.
+
+**6.2 The 10-month SMA filter on individual blue chips:** universally a huge
+drawdown reducer (ICT −93%→−55%, MER −90%→−63%, BDO −67%→−36%) but a return
+enhancer only on boom-bust names (ICT 22.7% vs 13.4% B&H; TEL 21.3% vs 20.6%);
+on steadier compounders it costs return through whipsaw (SMPH 4.8% vs 9.3%,
+JFC 9.7% vs 11.8%). Conclusion: run the trend filter at the *index/portfolio*
+level, not per-stock — except possibly on cyclical holdings.
+
+**6.3 Equal-weight dividend basket (TEL, MER, GLO, MBT, BPI), annual rebalance:**
+**+8.3%/yr vs +4.0% PSEi (1995–2021, price-only), MaxDD −52% vs −71%** — before
+counting the basket's ~3–6% dividend yield vs the index's ~2–3%, i.e., roughly
+12% vs 6.5% total return. Caveats: 5 names chosen as the canonical large payers
+(mild hindsight), and the basket lagged in the 2010–2021 bull decade (4.2% vs
+7.7% price-only; roughly a tie after dividends). Together with the official DivY
+record (2024: +32.1% vs +4.1% TR), this is the strongest stock-level evidence in
+this report and underpins ranking the dividend-quality core #1.
